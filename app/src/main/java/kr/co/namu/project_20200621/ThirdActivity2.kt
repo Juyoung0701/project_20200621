@@ -14,7 +14,5 @@ class ThirdActivity2 : AppCompatActivity() {
 
         messageTxt.text = receivedMessage
     }
-
-
-
+    
 }

@@ -31,10 +31,14 @@ class MainActivity : AppCompatActivity() {
             val myIntent = Intent(this, ThirdActivity2::class.java)
             myIntent.putExtra("message", inputMessage)
             startActivity(myIntent)
-
-
-
         }
+
+        setNickNameBtn.setOnClickListener {
+            val MyIntent = Intent(this, EditNickNameActivity::class.java)
+            startActivity(MyIntent)
+        }
+
+
 
     }
 }
