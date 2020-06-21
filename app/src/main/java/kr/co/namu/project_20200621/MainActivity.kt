@@ -15,7 +15,6 @@ class MainActivity : AppCompatActivity() {
 
 
             val myIntent = Intent(this, FirstActivity2::class.java)
-
             startActivity(myIntent)
         }
 
@@ -23,7 +22,6 @@ class MainActivity : AppCompatActivity() {
 
         secondActivityBtn.setOnClickListener {
             val myIntent = Intent(this, SecondActivity2::class.java)
-
             startActivity(myIntent)
         }
 
@@ -31,7 +29,9 @@ class MainActivity : AppCompatActivity() {
             val inputMessage = messageEdt.text.toString()
 
             val myIntent = Intent(this, ThirdActivity2::class.java)
+            myIntent.putExtra("message", inputMessage)
             startActivity(myIntent)
+
 
 
         }
